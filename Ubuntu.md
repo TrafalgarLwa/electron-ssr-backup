@@ -4,6 +4,11 @@
 
 `sudo apt install libcanberra-gtk-module libcanberra-gtk3-module gconf2 gconf-service libappindicator1`
 
+可选依赖：
+- `sudo apt-get install libssl-dev`
+- `sudo apt-get install libsodium-dev`
+如果软件报错，请安装可选依赖
+
 ### 安装软件
 
 `sudo dpkg -i  *.deb`
@@ -18,11 +23,9 @@
 
 `sudo apt install python`
 
-看有没有什么报错，如果没有，就在软件里面设置订阅地址看能否更新。
-因为终端信息会泄露我的IP，密码，在这里我就不放内容。
-请确保没有报错并可以成功更新节点
-
-*如果有问号可能会造成订阅地址无法更新（待验证猜想）*
+看有没有什么报错，如果没有，就在软件里面设置订阅地址看能否更新。<br>
+因为终端信息会泄露我的IP，密码，在这里我就不放内容。<br>
+请确保没有报错并可以成功更新节点<br>
 
 > *手动退出软件重启系统（笑，Windows习惯）*
 
@@ -58,6 +61,8 @@
 （笑，系统设置那一步白设置了？）
 
 不，在某些Debian系列中，你还真得手动设置，自动无效
+
+本应用使用`gsetting`设置系统代理，所以有些Linux系统无法使用该功能
 
 ### 某些软件提示https错误
 
